@@ -1,9 +1,5 @@
 setwd("C:/Users/user/Documents/RR/kawal kulon")
-kulon
-library(tidyverse)
-table(kulon$Angkatan, kulon$Departemen)
-table(kulon$Angkatan, kulon$`Rata-rata banyak tugas yang diberikan setiap minggunya?`)
-prop.table(kulon$Angkatan, kulon$`Rata-rata banyak tugas yang diberikan setiap minggunya?`) 
+kulon >- read.csv("filename.csv")
 
 
 
@@ -82,10 +78,5 @@ table(kulon$`Seberapa besar tingkat konsentrasi Anda apabila kuliah dilaksanakan
 table(kulon$`Seberapa paham Anda terhadap materi yang disampaikan?`) %>% prop.table()
 #####
 
-t <- kulon %>% filter(!(`Domisili saat ini` %in% c("DKI Jakarta", "D.I. Yogyakarta","Banten","Jawa Barat","Jawa Tengah","Jawa Timur")))
-kulon %>% ggplot(aes(`Seberapa besar tingkat konsentrasi Anda apabila kuliah dilaksanakan secara full daring selama 3 sks?`)) + geom_bar()
 
 
-######
-1+1
-kulon %>% ggplot(aes(x= `Domisili saat ini`)) + geom_bar() + 
